@@ -10,7 +10,7 @@ const FeatureIcon = ({ value }) => {
 const PriceTable = ({ data }) => {
   return (
     <div sx={styles.card} className={data.is_recommended ? 'recommended' : ''}>
-      {data.is_recommended && <span sx={styles.recommended}>Recommended</span>}
+      {data.is_recommended && <span sx={styles.recommended}>Популярное</span>}
       <div
         sx={styles.priceTable}
         className={data.is_recommended ? 'recommended' : ''}
@@ -21,24 +21,20 @@ const PriceTable = ({ data }) => {
         </span>
         <Box as="ul" variant="styles.unStyled" sx={styles.features}>
           <li>
-            <span>Full Access Library</span>
+            <span>5м²</span>
             <FeatureIcon value={data.library_access} />
           </li>
           <li>
-            <span>Multiple user</span>
+            <span>7,5м²</span>
             <FeatureIcon value={data.multiple_user} />
           </li>
           <li>
-            <span>Refund Policy</span>
+            <span>15м²</span>
             <FeatureIcon value={data.refund_policy} />
           </li>
           <li>
-            <span>Google Analytics</span>
+            <span>30м²</span>
             <FeatureIcon value={data.google_analytics} />
-          </li>
-          <li>
-            <span>24/7 support</span>
-            <FeatureIcon value={data.support} />
           </li>
         </Box>
         <Button
@@ -46,7 +42,7 @@ const PriceTable = ({ data }) => {
           variant="primaryOutline"
           className={data.is_recommended ? 'recommended' : ''}
         >
-          Choose Plan
+          Заказать бокс
         </Button>
         <span sx={styles.trial}>{data.trial_period} days free trial</span>
       </div>

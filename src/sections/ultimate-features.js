@@ -16,43 +16,43 @@ const data = [
     id: 1,
     icon: icon1,
     path: '#!',
-    title: 'Email Subscription',
-    description: `We’re driven beyond just finishing projects. We want to find smart solutions.`,
+    title: 'Освещение',
+    description: `Внутри каждого контейнера мы предоставляем освещение для вашего комфорта.`,
   },
   {
     id: 2,
     icon: icon2,
     path: '#!',
-    title: 'Bolt Performance',
-    description: `We’re driven beyond just finishing projects. We want to find smart solutions.`,
+    title: 'Расположение',
+    description: `Склад на ходится на красной линии на пр.Слобожанский`,
   },
   {
     id: 3,
     icon: icon3,
     path: '#!',
-    title: 'Secure Transaction',
-    description: `We’re driven beyond just finishing projects. We want to find smart solutions.`,
+    title: 'Погрузка и разгрузка',
+    description: `Подъезд к воротам контейнера без проблем, для разгрузки и погрузки`,
   },
   {
     id: 4,
     icon: icon4,
     path: '#!',
-    title: 'Multiple Options',
-    description: `We’re driven beyond just finishing projects. We want to find smart solutions.`,
+    title: 'Доступ 24/7',
+    description: `В любое время дня и ночи вы имеете доступ к своему контейнеру.`,
   },
   {
     id: 5,
     icon: icon5,
     path: '#!',
-    title: 'Customer Support',
-    description: `We’re driven beyond just finishing projects. We want to find smart solutions.`,
+    title: 'Охрана 24 часа',
+    description: `Круглосуточная охрана, видеофиксация и сигнализация.`,
   },
   {
     id: 6,
     icon: icon6,
     path: '#!',
-    title: 'Integrated with Shopify',
-    description: `We’re driven beyond just finishing projects. We want to find smart solutions.`,
+    title: 'Большой выбор',
+    description: `Площадь складских боксов от 5 до 30 м².`,
   },
 ];
 
@@ -62,8 +62,8 @@ const UltimateFeatures = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          slogan="Ideal solutions for you"
-          title="Go beyond ultimate features"
+          slogan="Идеальное решение для Вас"
+          title="Наши преимущества"
         />
         <Box sx={styles.grid}>
           {data?.map((item) => (

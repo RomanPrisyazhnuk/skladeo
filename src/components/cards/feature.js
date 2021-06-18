@@ -30,7 +30,7 @@ const styles = {
       null,
       '45px 30px 55px',
       '40px 25px 50px 35px',
-      '60px 45px 60px 50px',
+      '40px 25px 50px 35px',
     ],
     textAlign: ['center', null, null, null, null, 'left'],
     transition: '0.3s ease 0s',

@@ -22,8 +22,7 @@ const CustomerSupport = () => {
           </Box>
           <Box sx={styles.content}>
             <Heading sx={styles.title}>
-              Customer support is our main priority with their hundred percent
-              satisfaction.
+              В каких случаях арендуют контейнеры
             </Heading>
             <Text as="p" sx={styles.summary}>
               Get your tests delivered at let home collect sample from the

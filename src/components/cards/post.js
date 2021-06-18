@@ -12,7 +12,7 @@ const Post = ({ post }) => {
       </Flex>
       <Heading as="h4">{post.title}</Heading>
       {post.desc && <Text as="p">{post.desc}</Text>}
-      {post.link && <LearnMore path={post.link} label="Learn More" />}
+      {post.link && <LearnMore path={post.link} label="Подробнее" />}
     </article>
   );
 };

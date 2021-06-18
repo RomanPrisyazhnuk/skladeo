@@ -21,7 +21,7 @@ const data = [
   },
   {
     id: 2,
-    title: 'Premium Pack',
+    title: 'При оплате за 3 месяца',
     amount: 23.99,
     is_recommended: true,
     library_access: true,
@@ -33,7 +33,7 @@ const data = [
   },
   {
     id: 3,
-    title: 'Custom Pack',
+    title: 'При оплате за 6 месяцев',
     amount: 29.99,
     is_recommended: false,
     library_access: true,
@@ -45,7 +45,7 @@ const data = [
   },
   {
     id: 4,
-    title: 'Ultimate Pack',
+    title: 'При оплате за год',
     amount: 35.99,
     is_recommended: false,
     library_access: true,
@@ -104,11 +104,10 @@ const Pricing = () => {
         <Box sx={styles.grid}>
           {isTablet && (
             <ul as="ul" sx={styles.features}>
-              <li>Full Access Library</li>
-              <li>Multiple user</li>
-              <li>Refund Policy</li>
-              <li>Google Analytics</li>
-              <li>24/7 support</li>
+              <li>5м²</li>
+              <li>7,5м²</li>
+              <li>15м²</li>
+              <li>30м²</li>
             </ul>
           )}
 

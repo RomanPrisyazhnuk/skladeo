@@ -4,24 +4,24 @@ import { jsx, Box, Flex, Container, Heading, Text } from 'theme-ui';
 import { rgba } from 'polished';
 import Image from 'components/image';
 import SubscriptionForm from 'components/subscription-form';
-import illustration from 'assets/images/banner-bg.png';
+import illustration from 'assets/images/banner-bg-new.png';
 import paypal from 'assets/images/paypal.png';
 import google from 'assets/images/google.png';
 import dropbox from 'assets/images/dropbox.png';
 
 const logos = [
-  {
-    name: 'Paypal',
-    src: paypal,
-  },
-  {
-    name: 'Google',
-    src: google,
-  },
-  {
-    name: 'Dropbox',
-    src: dropbox,
-  },
+  // {
+  //   name: 'Paypal',
+  //   src: paypal,
+  // },
+  // {
+  //   name: 'Google',
+  //   src: google,
+  // },
+  // {
+  //   name: 'Dropbox',
+  //   src: dropbox,
+  // },
 ];
 
 const Banner = () => {
@@ -38,7 +38,7 @@ const Banner = () => {
             </Text>
             <SubscriptionForm sx={styles.subscriptionForm} />
             <Flex sx={styles.sponsoredBy}>
-              <Text as="span">Our clients</Text>
+              <Text as="span">Мы позвоним и поможем подобрать оптимальный бокс для Ваших целей</Text>
               <Flex sx={styles.sponsor}>
                 {logos?.map((logo, index) => (
                   <Flex as="figure" key={index}>

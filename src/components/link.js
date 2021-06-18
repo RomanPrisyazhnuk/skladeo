@@ -35,7 +35,7 @@ export function LearnMore({ path, label, children, ...rest }) {
   return (
     <NextLink href={path}>
       <A sx={styles.learnMore} {...rest}>
-        {label ?? 'Learn More'} <IoIosArrowForward size="16px" />
+        {label ?? 'Подробнее'} <IoIosArrowForward size="16px" />
       </A>
     </NextLink>
   );

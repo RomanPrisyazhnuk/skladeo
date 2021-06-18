@@ -31,7 +31,7 @@ const SectionHeading = ({
         <LearnMore
           path="#"
           sx={{ mt: [3, null, null, 4] }}
-          label={learnMore ?? 'Learn More'}
+          label={learnMore ?? 'Подробнее'}
         />
       )}
     </Box>
