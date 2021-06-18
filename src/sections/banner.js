@@ -2,27 +2,8 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Container, Heading, Text } from 'theme-ui';
 import { rgba } from 'polished';
-import Image from 'components/image';
 import SubscriptionForm from 'components/subscription-form';
 import illustration from 'assets/images/banner-bg-new.png';
-import paypal from 'assets/images/paypal.png';
-import google from 'assets/images/google.png';
-import dropbox from 'assets/images/dropbox.png';
-
-const logos = [
-  // {
-  //   name: 'Paypal',
-  //   src: paypal,
-  // },
-  // {
-  //   name: 'Google',
-  //   src: google,
-  // },
-  // {
-  //   name: 'Dropbox',
-  //   src: dropbox,
-  // },
-];
 
 const Banner = () => {
   return (
@@ -38,14 +19,7 @@ const Banner = () => {
             </Text>
             <SubscriptionForm sx={styles.subscriptionForm} />
             <Flex sx={styles.sponsoredBy}>
-              <Text as="span">Мы позвоним и поможем подобрать оптимальный бокс для Ваших целей</Text>
-              <Flex sx={styles.sponsor}>
-                {logos?.map((logo, index) => (
-                  <Flex as="figure" key={index}>
-                    <Image src={logo.src} alt={logo.name} />
-                  </Flex>
-                ))}
-              </Flex>
+              {/*<Text as="span">Мы поможем подобрать оптимальный бокс для Ваших целей</Text>*/}
             </Flex>
           </Box>
         </Box>
@@ -58,16 +32,20 @@ export default Banner;
 
 const styles = {
   section: {
-    background: `transparent url(${illustration}) no-repeat center top / cover`,
+    maxHeight: `600px`,
+    '@media only screen and (min-width:1024px)': {
+      background: `transparent url(${illustration}) no-repeat center top / cover`,
+    },
     pt: [18, null, null, 17, null, null, 0],
     pb: [12, null, null, 12, 7, 11, 0],
+    ml: [null, null, null, null, null, null, 100]
   },
   contentWrapper: {
     gap: [null, null, null, null, 8, 15],
     display: ['block', null, null, null, 'grid'],
     alignItems: 'center',
     gridTemplateColumns: [null, null, null, null, '1fr 1fr', '530px 1fr'],
-    minHeight: ['auto', null, null, null, '42vh', '81vh', '100vh'],
+    height: ['auto', null, null, null, '42vh', '550px', '700px'],
     pt: [null, null, null, 50, 0, null],
     '@media only screen and (min-width:1501px) and (max-width:1600px)': {
       pt: 14,

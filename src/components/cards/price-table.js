@@ -17,24 +17,24 @@ const PriceTable = ({ data }) => {
       >
         <span sx={styles.title}>{data.title}</span>
         <span sx={styles.amount}>
-          ${data.amount}/<small>в месяц.</small>
+          {data.amount}%<small> скидка.</small>
         </span>
         <Box as="ul" variant="styles.unStyled" sx={styles.features}>
           <li>
             <span>5м²</span>
-            <FeatureIcon value={data.library_access} />
+            <FeatureIcon value={data.access_price_5} />
           </li>
           <li>
             <span>7,5м²</span>
-            <FeatureIcon value={data.multiple_user} />
+            <FeatureIcon value={data.access_price_75} />
           </li>
           <li>
             <span>15м²</span>
-            <FeatureIcon value={data.refund_policy} />
+            <FeatureIcon value={data.access_price_15} />
           </li>
           <li>
             <span>30м²</span>
-            <FeatureIcon value={data.google_analytics} />
+            <FeatureIcon value={data.access_price_30} />
           </li>
         </Box>
         <Button

@@ -12,7 +12,7 @@ const Feature = ({ data, ...props }) => {
       <Box>
         <Heading as="h4">{data?.title}</Heading>
         <Text as="p">{data?.description}</Text>
-        {data?.path && <LearnMore path={data?.path} />}
+        {/*{data?.path && <LearnMore path={data?.path} />}*/}
       </Box>
     </Box>
   );
@@ -27,12 +27,12 @@ const styles = {
     padding: [
       null,
       null,
-      null,
+      '20px 20px 20px 20px',
       '45px 30px 55px',
-      '40px 25px 50px 35px',
-      '40px 25px 50px 35px',
+      '40px 20px 50px 30px',
+      '20px 20px 20px 20px',
     ],
-    textAlign: ['center', null, null, null, null, 'left'],
+    textAlign: ['center', null, null, null, null, 'center'],
     transition: '0.3s ease 0s',
     '@media only screen and (min-width:768px)': {
       ':hover': {
@@ -43,6 +43,8 @@ const styles = {
       },
     },
     figure: {
+      maxHeight: '114px',
+      maxWidth: '114px',
       display: 'inline-flex',
       alignItems: 'center',
       minWidth: [70],
