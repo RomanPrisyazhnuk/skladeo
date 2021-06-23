@@ -13,11 +13,6 @@ const SectionHeading = ({
 }) => {
   return (
     <Box sx={styles.heading} {...props}>
-      {slogan && (
-        <Text as="p" sx={styles.slogan}>
-          {slogan}
-        </Text>
-      )}
       <Heading as="h3" sx={styles.title}>
         {emoji ? <span>{title}</span> : title}
         {emoji && <Image src={emoji} alt="emoji" />}

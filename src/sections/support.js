@@ -30,12 +30,10 @@ const Support = () => {
           <div sx={styles.content}>
             <div sx={styles.heading}>
               <Heading sx={styles.title}>
-                Do you need help? Our support team ready to help you
+                Кто мы такие?
               </Heading>
               <Text as="p" sx={styles.summary}>
-                Get your tests delivered at let home collect sample from the
-                victory of the managements that supplies best design system
-                guidelines ever.
+                Добро пожаловать в центр хранения личных и сезонных вещей Skladeo! Наш центр обладаем опытом и достаточной компетенцией для решения большинства задач по хранению. Оказываем услуги частным клиентам, юридическим лицам и индивидуальным предпринимателям.
               </Text>
             </div>
             {/* <SectionHeading

@@ -6,10 +6,13 @@ import Image from 'components/image';
 import support from 'assets/images/support.png';
 
 const list = [
-  'Medical and vision',
-  'Life insurance',
-  'HSAs and FSAs',
-  'Commuter benefits',
+  'Хранение личных вещей',
+  'Хранение мебели на время ремонта',
+  'Хранение строительных материалов',
+  'Хранение товаров для интернет-магазинов',
+  'Зимнее хранение мотоцикла',
+  'Сезонное хранение шин',
+  'Зимнее хранение велосипеда',
 ];
 
 const CustomerSupport = () => {

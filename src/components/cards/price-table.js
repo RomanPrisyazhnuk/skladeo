@@ -1,6 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Button } from 'theme-ui';
+import { jsx, Box, Button, Image } from 'theme-ui';
 import { rgba } from 'polished';
 
 const FeatureIcon = ({ value }) => {
@@ -17,24 +17,24 @@ const PriceTable = ({ data }) => {
       >
         <span sx={styles.title}>{data.title}</span>
         <span sx={styles.amount}>
-          {data.amount}%<small> скидка.</small>
+          <Image src={data?.image} alt={data?.title} />
         </span>
         <Box as="ul" variant="styles.unStyled" sx={styles.features}>
           <li>
-            <span>5м²</span>
-            <FeatureIcon value={data.access_price_5} />
+            <span sx={styles.square}>При оплате за месяц</span>
+            <FeatureIcon value={data.cost1m} />
           </li>
           <li>
-            <span>7,5м²</span>
-            <FeatureIcon value={data.access_price_75} />
+            <span sx={styles.square} >При оплате за 3 месяца</span>
+            <FeatureIcon value={data.cost3m} />
           </li>
           <li>
-            <span>15м²</span>
-            <FeatureIcon value={data.access_price_15} />
+            <span sx={styles.square}>При оплате за 6 месяцев</span>
+            <FeatureIcon value={data.cost6m} />
           </li>
           <li>
-            <span>30м²</span>
-            <FeatureIcon value={data.access_price_30} />
+            <span sx={styles.square}>При оплате за год</span>
+            <FeatureIcon value={data.cost12m} />
           </li>
         </Box>
         <Button
@@ -44,7 +44,6 @@ const PriceTable = ({ data }) => {
         >
           Заказать бокс
         </Button>
-        <span sx={styles.trial}>{data.trial_period} days free trial</span>
       </div>
     </div>
   );
@@ -104,7 +103,7 @@ const styles = {
     fontWeight: 500,
     fontSize: [1, null, null, 2],
     lineHeight: 1.31,
-    mb: [3, null, null, 5, 2, 5],
+    mb: [3, null, null, 5, 2, 0],
   },
   amount: {
     color: 'heading',
@@ -153,14 +152,15 @@ const styles = {
       ':last-of-type': {
         pb: 0,
       },
-      span: {
-        display: [null, null, null, null, 'none'],
-      },
+
       svg: {
         height: 20,
         width: 20,
       },
     },
+  },
+  square: {
+    display: [null, null, null, null, 'none'],
   },
   button: {
     minHeight: [30, null, null, 45, 40, 50],

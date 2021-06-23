@@ -53,8 +53,6 @@ const Blog = () => {
       <Container>
         <SectionHeading
           sx={{ mb: [6, null, null, 14] }}
-          slogan="Latest newsfeed"
-          title="Our recent blog post that updated"
         />
         <Masonry sx={styles.masonry} options={masonryOptions}>
           {data.map((post) => (

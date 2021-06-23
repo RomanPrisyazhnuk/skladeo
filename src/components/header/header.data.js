@@ -21,6 +21,6 @@ export default [
   },
   {
     path: 'faq',
-    label: 'Faq',
+    label: 'Вопросы',
   },
 ];

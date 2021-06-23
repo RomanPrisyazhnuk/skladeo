@@ -5,51 +5,55 @@ import { jsx, Box, Container } from 'theme-ui';
 import { useMediaQuery } from 'react-responsive';
 import PriceTable from 'components/cards/price-table';
 import SectionHeading from 'components/section-heading';
+import icon1 from 'assets/images/containers/cont-5.svg';
+import icon2 from 'assets/images/containers/cont-7.svg';
+import icon3 from 'assets/images/containers/cont-15.svg';
+import icon4 from 'assets/images/containers/cont-30.svg';
 
 const data = [
   {
     id: 1,
-    title: 'При оплате за месяц',
+    title: 'Бокс 5м²(Грн/месяц)',
     amount: 5,
+    image: icon1,
     is_recommended: false,
-    access_price_5: 1662,
-    access_price_75: 1575,
-    access_price_15: 1487,
-    access_price_30: 1312,
-    trial_period: 15,
+    cost1m: 1662,
+    cost3m: 1575,
+    cost6m: 1487,
+    cost12m: 1312,
   },
   {
     id: 2,
-    title: 'При оплате за 3 месяца',
+    title: 'Бокс 7,5м²(Грн/месяц)',
     amount: 15,
+    image: icon2,
     is_recommended: true,
-    access_price_5: true,
-    access_price_75: true,
-    access_price_15: true,
-    access_price_30: false,
-    trial_period: 30,
+    cost1m: 2280,
+    cost3m: 2160,
+    cost6m: 2040,
+    cost12m: 1800,
   },
   {
     id: 3,
-    title: 'При оплате за 6 месяцев',
+    title: 'Бокс 15м²(Грн/месяц)',
     amount: 20,
+    image: icon3,
     is_recommended: false,
-    access_price_5: true,
-    access_price_75: true,
-    access_price_15: true,
-    access_price_30: true,
-    trial_period: 30,
+    cost1m: 3990,
+    cost3m: 3780,
+    cost6m: 3570,
+    cost12m: 3150,
   },
   {
     id: 4,
-    title: 'При оплате за год',
+    title: 'Бокс 30м²(Грн/месяц)',
     amount: 30,
+    image: icon4,
     is_recommended: false,
-    access_price_5: true,
-    access_price_75: true,
-    access_price_15: true,
-    access_price_30: true,
-    trial_period: 45,
+    cost1m: 6840,
+    cost3m: 6120,
+    cost6m: 5760,
+    cost12m: 5040,
   },
 ];
 
@@ -95,15 +99,15 @@ const Pricing = () => {
         <SectionHeading
           sx={{ mb: [6, null, null, 14] }}
           slogan="Deal for your business"
-          title="Meet our pricing plan that suit you"
+          title="Дольше хранишь - больше скидка"
         />
         <Box sx={styles.grid}>
           {isTablet && (
             <ul as="ul" sx={styles.features}>
-              <li>5м²</li>
-              <li>7,5м²</li>
-              <li>15м²</li>
-              <li>30м²</li>
+              <li>За 1 месяц - 5% </li>
+              <li>За 3 месяца - 15% </li>
+              <li>За 6 месяцев - 20% </li>
+              <li>За год - 30% </li>
             </ul>
           )}
 
@@ -174,6 +178,10 @@ const styles = {
   },
   features: {
     pl: 0,
+    pt: [ null, null, null, null, '126px', '143px'],
+    '@media (min-width:1384px) and (max-width:1503px)': {
+      pt: `141px!important`
+    },
     transform: [
       null,
       null,

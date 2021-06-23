@@ -7,64 +7,87 @@ import Accordion from 'components/accordion/accordion';
 const data = [
   {
     id: 1,
-    title: `01. Which domain should I purchase?`,
+    title: `Что такое self-storage?`,
     contents: (
       <div>
-        Get your website tests delivered at the home collect a sample. Simply
-        contact us and we'll move your hosting account from any other provider,
-        regardless of the control panel. If at anytime your website is down for
-        more than 0.1% result with proper investigation experiments.
+          Self storage в переводе означает индивидуальное хранение вещей. В данный момент так можно обозначить целую индустрию предоставления услуг по хранению вещей в стационарных боксах или контейнерах. Впервые услуги self storage появилась в США в 50-е годы, сейчас этот способ хранения вещей там наиболее популярен. В 90-е годы прошлого века self storage стал популярен и в Европе: в Англии работает более 650 складов, во Франции — 170, в Голландии — около 100. В Украине первые склады индивидуального хранения появились в 2009-2010 годах, постепенно этот сегмент рынка растет, у нас сейчас только формируется культура хранения вещей вне дома.
       </div>
     ),
   },
   {
     id: 2,
-    title: `02. What are some tips when choosing a name?`,
+    title: `Как обеспечивается безопасность моих вещей в SKladeo?`,
     contents: (
       <div>
-        We make it easy to move to CometNine. Simply contact us {/**/}and we'll move
-        your hosting account from any other provider, regardless of the control
-        panel. If at anytime your website is down for more than 0.1% result with
-        proper investigation experiments.
+          Безопасность хранимого имущества – это ключевой аспект нашей работы. Мы достигаем этого за счет комплекса мер:<br/>
+        <span>- В качестве мест хранения используются морские контейнеры, которые имеют антивандальную конструкцию.</span><br/>
+        <span>- Видеонаблюдение на всей территории с круглосуточной записью.</span><br/>
+        <span>- Территория огорожена и охраняется сторожем.</span>
       </div>
     ),
   },
   {
     id: 3,
-    title: `03. What if I need help choosing the right domain?`,
+    title: ` Могу ли я зарезервировать место для хранения своего имущества онлайн?`,
     contents: (
       <div>
-        Create a hub for cross-functional work that also works with all. Simply
-        contact us and we'll move your hosting account from any other provider,
-        regardless of the control panel. If at anytime your website is down for
-        more than 0.1% result with proper investigation experiments.
+          Да, можно создать заявку на сайте. Заполнение заявки онлайн не гарантирует наличия места. После получения от вас заявки, менеджер центра Skladeo свяжется для уточнения деталей и подтверждения бронирования.
       </div>
     ),
   },
   {
     id: 4,
-    title: `04. Can I upgrade or downgrade my web hosting subscription system?`,
+    title: `Что нужно для заключения договора аренды?`,
     contents: (
       <div>
-        The pricing made me a little hesitant at first but I have been. Simply
-        contact us and we'll move your hosting account from any other provider,
-        regardless of the control panel. If at anytime your website is down for
-        more than 0.1% result with proper investigation experiments.
+          Действующий паспорт, контактный телефон.
       </div>
     ),
   },
   {
     id: 5,
-    title: `05. Learn from community on Brandwagon`,
+    title: `Нужен ли собственный замок?`,
     contents: (
       <div>
-        Stop your viewers from getting distracted. Publish videos to. Simply
-        contact us and we'll move your hosting account from any other provider,
-        regardless of the control panel. If at anytime your website is down for
-        more than 0.1% result with proper investigation experiments.
+        Мы не выдаем свои замки на время аренды, так как только личный замок может гарантировать безопасность имущества.
       </div>
     ),
   },
+  {
+    id: 6,
+    title: `Предоставляете ли скидки?`,
+    contents: (
+      <div>
+        Да, мы предоставляем скидки. Есть постоянные скидки в зависимости от предоплаты за длительный срок аренды.
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    title: `Какие условия хранения в контейнерах моих вещей?`,
+    contents: (
+      <div>
+        Морские контейнеры, используемые для хранения личного имущества, надежно защищают от осадков, пыли, ветра и солнечных лучей. Температура в них обычно равна уличной +-10 градусов.
+      </div>
+    ),
+  },
+  {
+    id: 8,
+    title: `Какие вещи хранить нельзя?`,
+    contents: (
+      <div>
+        <span>- Вещи и товары, запрещенные к обороту на территории Украины;</span><br/>
+          <span>- Токсичные, легковоспламеняющиеся, взрывоопасные и радиоактивные вещества;</span><br/>
+          <span>- Взрывоопасные предметы, краску в негерметичной или ранее вскрытой упаковке;</span><br/>
+          <span>- Горюче-смазочные материалы, легко воспламеняющиеся вещества и летучие жидкости;</span><br/>
+          <span>- Растения, животные и птицы;</span><br/>
+          <span>- Продукты питания и скоропортящиеся товары;</span><br/>
+          <span>- Деньги и ценные бумаги;</span><br/>
+          <span>- Оружие и боеприпасы.</span>
+      </div>
+    ),
+  },
+
 ];
 
 const Faq = () => {
@@ -74,12 +97,12 @@ const Faq = () => {
         <SectionHeading
           sx={{ mb: [6, null, null, 12, 17] }}
           slogan="Get your question answer"
-          title="Frequently asked question"
+          title="Часто задаваемые вопросы"
         />
 
         <Accordion items={data} />
         <Box sx={styles.loadMore}>
-          <Button variant="text">Still Question? Contact us</Button>
+          <Button variant="text">Еще вопросы? закажите звонок</Button>
         </Box>
       </Container>
     </section>

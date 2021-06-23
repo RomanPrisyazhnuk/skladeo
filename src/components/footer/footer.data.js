@@ -53,32 +53,6 @@ export const menuItems = [
   },
   {
     id: 3,
-    title: 'Our Information',
-    items: [
-      {
-        path: '#!',
-        label: 'Return Policy ',
-      },
-      {
-        path: '#!',
-        label: 'Privacy Policy',
-      },
-      {
-        path: '#!',
-        label: 'Terms & Conditions',
-      },
-      {
-        path: '#!',
-        label: 'Site Map',
-      },
-      {
-        path: '#!',
-        label: 'Store Hours',
-      },
-    ],
-  },
-  {
-    id: 4,
     title: 'My Account',
     items: [
       {
@@ -127,25 +101,30 @@ export const menuItems = [
   },
 ];
 
-export const footerNav = [
-  {
-    path: '#!',
-    label: 'Home',
-  },
-  {
-    path: '#!',
-    label: 'Advertise',
-  },
-  {
-    path: '#!',
-    label: 'Supports',
-  },
-  {
-    path: '#!',
-    label: 'Marketing',
-  },
-  {
-    path: '#!',
-    label: 'FAQ',
-  },
-];
+export const footerNav = [];
+// export const footerNav = [
+//   {
+//     path: 'features',
+//     label: 'Преимущества',
+//   },
+//   {
+//     path: 'pricing',
+//     label: 'Цена',
+//   },
+//   {
+//     path: 'store',
+//     label: 'Что хранить',
+//   },
+//   {
+//     path: 'contacts',
+//     label: 'Контакты',
+//   },
+//   {
+//     path: 'blog',
+//     label: 'Новости',
+//   },
+//   {
+//     path: 'faq',
+//     label: 'Вопросы',
+//   },
+// ];
