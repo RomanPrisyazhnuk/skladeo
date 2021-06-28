@@ -10,13 +10,13 @@ import { rgba } from 'polished';
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
-      <Container>
-        <Box sx={styles.footerTopInner}>
-          {menuItems.map(({ id, title, items }) => (
-            <FooterWidget key={id} title={title} items={items} />
-          ))}
-        </Box>
-      </Container>
+      {/*<Container>*/}
+        {/*<Box sx={styles.footerTopInner}>*/}
+          {/*{menuItems.map(({ id, title, items }) => (*/}
+            {/*<FooterWidget key={id} title={title} items={items} />*/}
+          {/*))}*/}
+        {/*</Box>*/}
+      {/*</Container>*/}
       <Container>
         <Box sx={styles.footerInner}>
           <Box sx={styles.copyright}>
