@@ -75,7 +75,7 @@ const styles = {
     border: (t) => `1px solid ${t.colors.borderColor}`,
     borderRadius: 10,
     paddingTop: [4, null, null, null, 6],
-    paddingBottom: [4, null, null, null, 6, 14],
+    paddingBottom: [4, null, null, null, 6, 3],
     '&.recommended': {
       borderColor: [null, null, null, null, 'white'],
       borderRadius: '0 0 10px 10px',

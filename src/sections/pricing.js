@@ -17,10 +17,10 @@ const data = [
     amount: 5,
     image: icon1,
     is_recommended: false,
-    cost1m: 1662,
-    cost3m: 1575,
-    cost6m: 1487,
-    cost12m: 1312,
+    cost1m: 1550,
+    cost3m: 1472,
+    cost6m: 1395,
+    cost12m: 1317,
   },
   {
     id: 2,
@@ -28,10 +28,10 @@ const data = [
     amount: 15,
     image: icon2,
     is_recommended: true,
-    cost1m: 2280,
-    cost3m: 2160,
-    cost6m: 2040,
-    cost12m: 1800,
+    cost1m: 2100,
+    cost3m: 1995,
+    cost6m: 1890,
+    cost12m: 1785,
   },
   {
     id: 3,
@@ -39,10 +39,10 @@ const data = [
     amount: 20,
     image: icon3,
     is_recommended: false,
-    cost1m: 3990,
-    cost3m: 3780,
-    cost6m: 3570,
-    cost12m: 3150,
+    cost1m: 3750,
+    cost3m: 3562,
+    cost6m: 3375,
+    cost12m: 3187,
   },
   {
     id: 4,
@@ -50,10 +50,10 @@ const data = [
     amount: 30,
     image: icon4,
     is_recommended: false,
-    cost1m: 6840,
-    cost3m: 6120,
-    cost6m: 5760,
-    cost12m: 5040,
+    cost1m: 5940,
+    cost3m: 5643,
+    cost6m: 5346,
+    cost12m: 5049,
   },
 ];
 
@@ -98,8 +98,7 @@ const Pricing = () => {
       <Container>
         <SectionHeading
           sx={{ mb: [6, null, null, 14] }}
-          slogan="Deal for your business"
-          title="Дольше хранишь - больше скидка"
+          title="Дольше хранишь - больше скидка!"
         />
         <Box sx={styles.grid}>
           {isTablet && (
@@ -126,8 +125,8 @@ export default Pricing;
 
 const styles = {
   section: {
-    pt: [6, null, 0, null, 10, 14],
-    pb: [8, null, null, null, 10, 17],
+    pt: [6, null, 0, null, 10, 3],
+    pb: [8, null, null, null, 10, 0],
   },
   grid: {
     maxWidth: 1133,

@@ -1,120 +1,126 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Container, Grid, Heading, Text } from 'theme-ui';
-import { IoIosCheckmarkCircle } from 'react-icons/io';
-import Image from 'components/image';
-import support from 'assets/images/support.png';
-
-const list = [
-  'Хранение личных вещей',
-  'Хранение мебели на время ремонта',
-  'Хранение строительных материалов',
-  'Хранение товаров для интернет-магазинов',
-  'Зимнее хранение мотоцикла',
-  'Сезонное хранение шин',
-  'Зимнее хранение велосипеда',
+import { jsx, Box, Container } from 'theme-ui';
+import SectionHeading from 'components/section-heading';
+import Feature from 'components/cards/feature';
+import icon1 from 'assets/images/howtouse/build_material.webp';
+import icon2 from 'assets/images/howtouse/goods.webp';
+import icon3 from 'assets/images/howtouse/wheels.webp';
+import icon4 from 'assets/images/howtouse/bike.webp';
+import icon5 from 'assets/images/howtouse/velo.webp';
+import icon6 from 'assets/images/howtouse/furniture.webp';
+import icon7 from 'assets/images/howtouse/personal.webp';
+import icon8 from 'assets/images/howtouse/instrument.webp';
+const data = [
+  {
+    id: 1,
+    icon: icon1,
+    path: '#!',
+    title: 'Хранение строительных материалов',
+    description: ``
+  },
+  {
+    id: 2,
+    icon: icon2,
+    path: '#!',
+    title: 'Хранение товаров для интернет-магазинов',
+    description: ``,
+  },
+  {
+    id: 3,
+    icon: icon3,
+    path: '#!',
+    title: 'Сезонное хранение шин',
+    description: ``,
+  },
+  {
+    id: 4,
+    icon: icon4,
+    path: '#!',
+    title: 'Зимнее хранение мотоцикла',
+    description: ``,
+  },
+  {
+    id: 5,
+    icon: icon5,
+    path: '#!',
+    title: 'Зимнее хранение велосипеда',
+    description: ``,
+  },
+  {
+    id: 6,
+    icon: icon6,
+    path: '#!',
+    title: ' Хранение мебели на время ремонта',
+    description: ``,
+  },
+  {
+    id: 7,
+    icon: icon8,
+    path: '#!',
+    title: 'Хранение инструмента и оборудования',
+    description: ``,
+  },
+  {
+    id: 8,
+    icon: icon7,
+    path: '#!',
+    title: 'Хранение личных вещей',
+    description: ``,
+  },
 ];
 
-const CustomerSupport = () => {
+const UltimateFeatures = () => {
   return (
-    <Box as="section" id="store" sx={styles.section}>
-      <Container>
-        <Box sx={styles.grid}>
-          <Box sx={styles.illustration}>
-            <Image src={support} loading="lazy" alt="support" />
+      <section id="store" sx={styles.section}>
+        <SectionHeading
+            sx={{ mb: [6, null, null, 14] , backgroundColor: "white"}}
+            title="Что хранить?"
+        />
+        <Container>
+          {/*<SectionHeading*/}
+          {/*sx={styles.heading}*/}
+          {/*slogan="Идеальное решение для Вас"*/}
+          {/*title="Наши преимущества"*/}
+          {/*/>*/}
+          <Box sx={styles.grid}>
+            {data?.map((item) => (
+                <Feature className="feature-item" key={item.id} data={item} />
+            ))}
           </Box>
-          <Box sx={styles.content}>
-            <Heading sx={styles.title}>
-              В каких случаях арендуют контейнеры
-            </Heading>
-            <Text as="p" sx={styles.summary}>
-              Get your tests delivered at let home collect sample from the
-              victory of the managements that supplies best design system
-              guidelines ever.
-            </Text>
-
-            <Grid sx={styles.list} as="ul">
-              {list.map((item, i) => (
-                <Text as="li" key={i}>
-                  <IoIosCheckmarkCircle
-                    sx={{ color: 'primary', mr: 2 }}
-                    size="20px"
-                  />
-                  {item}
-                </Text>
-              ))}
-            </Grid>
-          </Box>
-        </Box>
-      </Container>
-    </Box>
+        </Container>
+      </section>
   );
 };
 
-export default CustomerSupport;
+export default UltimateFeatures;
 
 const styles = {
   section: {
-    pt: [8, null, 12, 6, null, 15],
-    pb: [null, null, null, 8, 0],
+    backgroundColor: '#F9FBFD',
+    pt: [8, null, null, 12, null, 5],
+    pb: [9, null, null, 12, 16, 5],
+  },
+  heading: {
+    marginBottom: [7, null, null, 8, 7],
+    p: {
+      maxWidth: 490,
+      margin: ['10px auto 0'],
+    },
   },
   grid: {
-    gap: [null, null, null, null, 2],
-    display: ['flex', null, null, 'grid'],
-    flexDirection: ['column-reverse', null, null, 'unset'],
-    alignItems: 'center',
-    gridTemplateColumns: ['1fr', null, null, null, '470px 1fr', '1fr 549px'],
-  },
-  illustration: {
-    textAlign: 'center',
-    position: 'relative',
-    display: 'flex',
-    alignItems: 'center',
-    mt: [2, null, null, 0, 4, 0],
-    img: {
-      maxWidth: ['100%', null, null, null, null, '100%'],
-    },
-  },
-  content: {
-    marginTop: [null, null, null, null, null, -16],
-    maxWidth: [null, null, null, 420, 560, 'none'],
-    margin: [null, null, null, '0 auto', 'unset'],
-    textAlign: ['center', null, null, null, 'left'],
-  },
-  title: {
-    color: 'heading',
-    fontFamily: 'headingAlt',
-    fontSize: [4, null, null, 8, null, null, 11],
-    fontWeight: 500,
-    lineHeight: [1.33, null, 1.4, 1.53],
-    letterSpacing: ['-0.5px', null, null, '-1px'],
-    mb: 3,
-    span: {
-      backgroundSize: 'cover',
-      px: 2,
-    },
-  },
-  summary: {
-    color: 'textSecondary',
-    fontSize: ['13px', null, null, 2, '15px', 2],
-    lineHeight: [1.86, null, null, null, 1.86, 2.25],
-    maxWidth: 470,
-    m: [null, null, null, '20px auto 0', '15px 0 0', null, 'unset'],
-  },
-  list: {
-    gap: '0 18px',
-    gridTemplateColumns: ['repeat(2, 142px)', null, null, 'repeat(2, 200px)'],
-    justifyContent: [null, null, null, 'center', 'unset'],
-    listStyle: 'none',
-    mt: [4, null, null, 5, 4, 5],
-    p: 0,
-    li: {
-      fontSize: [0, 1, null, 2, '15px', 2],
-      fontWeight: 500,
-      alignItems: 'center',
-      color: 'textSecondary',
-      display: 'flex',
-      lineHeight: [2.81, null, null, null, 2.2, 2.81],
-    },
+    gap: [6, null, 0],
+    display: 'grid',
+    maxWidth: 1080,
+    margin: '0 auto',
+    gridTemplateColumns: [
+      'repeat(1, 1fr)',
+      null,
+      null,
+      'repeat(2, 1fr)',
+      'repeat(4, 1fr)',
+    ],
+    borderTop: (t) => [null, null, `1px solid ${t.colors.borderColor}`],
+    borderLeft: (t) => [null, null, `1px solid ${t.colors.borderColor}`],
   },
 };
