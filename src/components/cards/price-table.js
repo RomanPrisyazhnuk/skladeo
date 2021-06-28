@@ -1,6 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Button, Image } from 'theme-ui';
+import { jsx, Box, Image } from 'theme-ui';
 import { rgba } from 'polished';
 
 const FeatureIcon = ({ value }) => {
@@ -37,13 +37,13 @@ const PriceTable = ({ data }) => {
             <FeatureIcon value={data.cost12m} />
           </li>
         </Box>
-        <Button
-          sx={styles.button}
-          variant="primaryOutline"
-          className={data.is_recommended ? 'recommended' : ''}
-        >
-          Заказать бокс
-        </Button>
+        {/*<Button*/}
+          {/*sx={styles.button}*/}
+          {/*variant="primaryOutline"*/}
+          {/*className={data.is_recommended ? 'recommended' : ''}*/}
+        {/*>*/}
+          {/*Заказать бокс*/}
+        {/*</Button>*/}
       </div>
     </div>
   );
@@ -74,8 +74,9 @@ const styles = {
   priceTable: {
     border: (t) => `1px solid ${t.colors.borderColor}`,
     borderRadius: 10,
-    paddingTop: [4, null, null, null, 6],
-    paddingBottom: [4, null, null, null, 6, 3],
+    paddingTop: [4, null, null, null, 2],
+    paddingBottom: [4, null, null, null, 0, 0],
+    mb:  [4, 3, 3, 3, 3, 0],
     '&.recommended': {
       borderColor: [null, null, null, null, 'white'],
       borderRadius: '0 0 10px 10px',
@@ -118,7 +119,7 @@ const styles = {
     },
   },
   features: {
-    my: [4, null, null, 8, 2, 8],
+    my: [4, null, null, 8, 2, 0],
     li: {
       alignItems: 'center',
       borderTop: (t) => `1px solid ${t.colors.borderColor}`,

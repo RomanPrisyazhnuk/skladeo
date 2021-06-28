@@ -3,22 +3,22 @@
 import { jsx, Box, Container, Heading, Text } from 'theme-ui';
 import SupportType from 'components/cards/support-type';
 import Image from 'components/image';
-import illustration from 'assets/images/support-2.png';
-import icon1 from 'assets/images/icons/1.png';
-import icon2 from 'assets/images/icons/2.png';
+import illustration from 'assets/images/support-2.webp';
+import icon1 from 'assets/images/icons/phone.svg';
+import icon2 from 'assets/images/icons/mail.svg';
 
 const data = [
   {
     id: 1,
     icon: icon1,
-    title: 'Email client support',
-    text: `Ultimate access to all credit popular exercises and assessments materials`,
+    title: 'Позвоните нам',
+    text: `+38 095 216 7230`,
   },
   {
     id: 2,
     icon: icon2,
-    title: 'Live ticket support',
-    text: `Total assessment corrections with live support tickets download access system`,
+    title: 'Напишите нам',
+    text: `skladeomanager@gmail.com`,
   },
 ];
 
@@ -58,8 +58,8 @@ export default Support;
 
 const styles = {
   section: {
-    pt: [8, null, null, null, 10, 17],
-    pb: [8, null, null, null, 10, 16],
+    pt: [8, null, null, null, 3, 6],
+    pb: [8, null, null, null, 3, 6],
   },
 
   grid: {

@@ -7,22 +7,6 @@ export const menuItems = [
         path: '#!',
         label: 'About',
       },
-      {
-        path: '#!',
-        label: 'Affiliate',
-      },
-      {
-        path: '#!',
-        label: 'Careers & Culture    ',
-      },
-      {
-        path: '#!',
-        label: 'Blog',
-      },
-      {
-        path: '#!',
-        label: 'Press',
-      },
     ],
   },
   {
@@ -32,22 +16,6 @@ export const menuItems = [
       {
         path: '#!',
         label: 'Support Center',
-      },
-      {
-        path: '#!',
-        label: 'Customer Support',
-      },
-      {
-        path: '#!',
-        label: 'About Us',
-      },
-      {
-        path: '#!',
-        label: 'Copyright',
-      },
-      {
-        path: '#!',
-        label: 'Popular Campaign',
       },
     ],
   },
@@ -59,22 +27,18 @@ export const menuItems = [
         path: '#!',
         label: 'Press inquiries',
       },
+
+    ],
+  },
+  {
+    id: 4,
+    title: 'My Account',
+    items: [
       {
         path: '#!',
-        label: 'Social media ',
+        label: 'Press inquiries',
       },
-      {
-        path: '#!',
-        label: 'directories',
-      },
-      {
-        path: '#!',
-        label: 'Images & B-roll',
-      },
-      {
-        path: '#!',
-        label: 'Permissions',
-      },
+
     ],
   },
   {
@@ -85,46 +49,9 @@ export const menuItems = [
         path: '#!',
         label: 'Application security',
       },
-      {
-        path: '#!',
-        label: 'Software principles',
-      },
-      {
-        path: '#!',
-        label: 'Unwanted software policy',
-      },
-      {
-        path: '#!',
-        label: 'Responsible supply chain',
-      },
     ],
   },
 ];
 
 export const footerNav = [];
-// export const footerNav = [
-//   {
-//     path: 'features',
-//     label: 'Преимущества',
-//   },
-//   {
-//     path: 'pricing',
-//     label: 'Цена',
-//   },
-//   {
-//     path: 'store',
-//     label: 'Что хранить',
-//   },
-//   {
-//     path: 'contacts',
-//     label: 'Контакты',
-//   },
-//   {
-//     path: 'blog',
-//     label: 'Новости',
-//   },
-//   {
-//     path: 'faq',
-//     label: 'Вопросы',
-//   },
-// ];
+

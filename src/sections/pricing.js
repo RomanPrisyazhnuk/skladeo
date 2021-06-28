@@ -9,6 +9,7 @@ import icon1 from 'assets/images/containers/cont-5.svg';
 import icon2 from 'assets/images/containers/cont-7.svg';
 import icon3 from 'assets/images/containers/cont-15.svg';
 import icon4 from 'assets/images/containers/cont-30.svg';
+import SubscriptionForm from "../components/subscription-form";
 
 const data = [
   {
@@ -103,10 +104,10 @@ const Pricing = () => {
         <Box sx={styles.grid}>
           {isTablet && (
             <ul as="ul" sx={styles.features}>
-              <li>За 1 месяц - 5% </li>
-              <li>За 3 месяца - 15% </li>
-              <li>За 6 месяцев - 20% </li>
-              <li>За год - 30% </li>
+              <li>До 3-х месяцев</li>
+              <li>От 3-х месяцаев - 5% </li>
+              <li>От 6-ти месяцев - 10% </li>
+              <li>От года - 15% </li>
             </ul>
           )}
 
@@ -115,6 +116,9 @@ const Pricing = () => {
               <PriceTable key={price.id} data={price} />
             ))}
           </Slider>
+        </Box>
+        <Box sx={styles.loadMore}>
+        <SubscriptionForm buttonLabel="Заказать бокс" sx={styles.subscriptionForm} />
         </Box>
       </Container>
     </section>
@@ -169,18 +173,37 @@ const styles = {
       },
     },
   },
+  loadMore: {
+    display: "flex",
+    paddingTop: [3, null, null, 0],
+    alignItems: 'center',
+    justifyContent: 'center',
+    button: {
+      ml: '20px',
+      backgroundColor: '#ECF2F7',
+      color: '#738295',
+      minHeight: 50,
+      ':hover': {
+        backgroundColor: 'primary',
+        color: 'white',
+      },
+    },
+  },
   priceGroup: {
     gap: 2,
     alignItems: 'flex-end',
     display: [null, null, null, null, 'grid'],
     gridTemplateColumns: [null, null, null, null, 'repeat(4, 1fr)'],
   },
+  '@media screen and (min-width:1384px) and (max-width:1503px)': {
+    features: {
+    pt: `231px!important`
+    }
+  },
   features: {
     pl: 0,
-    pt: [ null, null, null, null, '126px', '143px'],
-    '@media (min-width:1384px) and (max-width:1503px)': {
-      pt: `141px!important`
-    },
+    pt: [ null, null, null, null, '169px', '242px'],
+
     transform: [
       null,
       null,

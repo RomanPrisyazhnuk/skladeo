@@ -18,9 +18,6 @@ const Banner = () => {
               Skladeo - центр хранения личных и сезонных вещей. После оформления вашего склада, Вы пользуетесь им самостоятельно, в любое удобное время посещая его и самостоятельно перемещая вещи.
             </Text>
             <SubscriptionForm sx={styles.subscriptionForm} />
-            <Flex sx={styles.sponsoredBy}>
-              {/*<Text as="span">Мы поможем подобрать оптимальный бокс для Ваших целей</Text>*/}
-            </Flex>
           </Box>
         </Box>
       </Container>

@@ -22,7 +22,7 @@ export default function Footer() {
           <Box sx={styles.copyright}>
             <Logo sx={styles.logo} />
             <Text as="span">
-              Copyright by {new Date().getFullYear()} Skladeo
+              Copyright by {new Date().getFullYear()} Skladeo - Cклады индивидуального хранения на базе морских контейнеров от 5 до 40 футов, складские боксы под личные вещи
             </Text>
           </Box>
 
@@ -82,6 +82,7 @@ const styles = {
     margin: ['15px 0 0', '15px 0 0', '0'],
     padding: 0,
     display: ['flex'],
+    flexDirection: "row",
     flexWrap: ['wrap', null, null, 'unset'],
     justifyContent: ['center', null, 'flex-start'],
     'li + li': {

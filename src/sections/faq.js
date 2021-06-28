@@ -3,6 +3,7 @@
 import { jsx, Box, Container, Button } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import Accordion from 'components/accordion/accordion';
+import SubscriptionForm from "../components/subscription-form";
 
 const data = [
   {
@@ -31,7 +32,7 @@ const data = [
     title: ` Могу ли я зарезервировать место для хранения своего имущества онлайн?`,
     contents: (
       <div>
-          Да, можно создать заявку на сайте. Заполнение заявки онлайн не гарантирует наличия места. После получения от вас заявки, менеджер центра Skladeo свяжется для уточнения деталей и подтверждения бронирования.
+          Вы можете заказать звонок, менеджер центра Skladeo свяжется для уточнения деталей и подтверждения бронирования.
       </div>
     ),
   },
@@ -96,13 +97,13 @@ const Faq = () => {
       <Container>
         <SectionHeading
           sx={{ mb: [6, null, null, 12, 17] }}
-          slogan="Get your question answer"
           title="Часто задаваемые вопросы"
         />
 
         <Accordion items={data} />
+        <span sx={styles.label} >Еще вопросы? Закажите звонок!</span>
         <Box sx={styles.loadMore}>
-          <Button variant="text">Еще вопросы? закажите звонок</Button>
+          <SubscriptionForm buttonLabel="Узнать больше" sx={styles.subscriptionForm} />
         </Box>
       </Container>
     </section>
@@ -113,21 +114,32 @@ export default Faq;
 
 const styles = {
   section: {
-    pt: [6, null, null, null, 6, 10, 14],
-    pb: [12, null, null, null, 10, 22],
+    pt: [6, null, null, null, 0, 0, 0],
+    pb: [12, null, null, null, 5, 5],
   },
   loadMore: {
+    display: "flex",
     paddingTop: [3, null, null, 0],
-    textAlign: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
     button: {
+      ml: '20px',
       backgroundColor: '#ECF2F7',
       color: '#738295',
       minHeight: 50,
-      px: '22px',
       ':hover': {
         backgroundColor: 'primary',
         color: 'white',
       },
     },
   },
+  label: {
+    textAlign: 'center',
+    color: 'heading',
+    fontWeight: 500,
+    fontSize: [2, null, null, 4],
+    lineHeight: 1.5,
+    letterSpacing: 'heading',
+    paddingRight: [8, null, null, 0],
+  }
 };
