@@ -2,10 +2,10 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = 'startup landing descriptions',
-  author = 'RedQ, Inc',
+  description = 'Skladeo - Cклады индивидуального хранения на базе морских контейнеров от 5 до 40 футов, складские боксы под личные вещи',
+  author = 'Skladeo',
   meta,
-  title = 'startup landing title',
+  title = 'Skladeo',
 }) {
   const metaData = [
     {
