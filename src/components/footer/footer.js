@@ -3,8 +3,8 @@
 import { jsx, Box, Text, Container } from 'theme-ui';
 import Logo from 'components/logo';
 import { Link } from 'components/link';
-import FooterWidget from 'components/footer/widget';
-import { menuItems, footerNav } from './footer.data';
+// import FooterWidget from 'components/footer/widget';
+import { footerNav } from './footer.data';
 import { rgba } from 'polished';
 
 export default function Footer() {

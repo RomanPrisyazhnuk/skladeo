@@ -202,7 +202,7 @@ const styles = {
   },
   features: {
     pl: 0,
-    pt: [ null, null, null, null, '169px', '242px'],
+    pt: [ null, null, null, null, '203px', '287px'],
 
     transform: [
       null,

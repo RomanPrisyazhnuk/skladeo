@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://startuplanding.io
+Host: https://skladeo.com
 
 # Sitemaps
-Sitemap: https://startuplanding.io/sitemap.xml
+Sitemap: https://skladeo.com/sitemap.xml
