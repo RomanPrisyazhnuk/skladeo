@@ -2,7 +2,7 @@ import ReactGA from 'react-ga';
 
 export const initGA = () => {
   console.log('GA init');
-  ReactGA.initialize(process.env.GOOGLE_ANALYTICS_TRACKING_ID);
+  ReactGA.initialize('G-80FCV98CG0');
 };
 
 export const logPageView = () => {
