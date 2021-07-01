@@ -1,7 +1,7 @@
 module.exports = {
   apps: [{
     name: 'skladeo',
-    script: 'npm run serve',
+    script: 'npm run start',
     instances: 1,
     watch: false,
     max_memory_restart: '1G',
