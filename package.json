@@ -7,6 +7,7 @@
     "build": "next build",
     "serve": "next start",
     "export": "next export",
+    "deploy": "next build && next export",
     "postbuild": "next-sitemap"
   },
   "dependencies": {
