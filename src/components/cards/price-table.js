@@ -24,18 +24,6 @@ const PriceTable = ({ data }) => {
             <span sx={styles.square}>При оплате за месяц</span>
             <FeatureIcon value={data.cost1m} />
           </li>
-          <li>
-            <span sx={styles.square} >При оплате за 3 месяца</span>
-            <FeatureIcon value={data.cost3m} />
-          </li>
-          <li>
-            <span sx={styles.square}>При оплате за 6 месяцев</span>
-            <FeatureIcon value={data.cost6m} />
-          </li>
-          <li>
-            <span sx={styles.square}>При оплате за год</span>
-            <FeatureIcon value={data.cost12m} />
-          </li>
         </Box>
         {/*<Button*/}
           {/*sx={styles.button}*/}
@@ -55,6 +43,7 @@ const styles = {
   card: {
     position: 'relative',
     textAlign: 'center',
+    minWidth: '300px',
     '&.recommended': {
       borderColor: [null, null, null, null, 'white'],
       borderRadius: '0px 0px 10px 10px',

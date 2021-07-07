@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import Slider from 'react-slick';
-import { jsx, Box, Container } from 'theme-ui';
+import { jsx, Box, Container, Image } from 'theme-ui';
 import { useMediaQuery } from 'react-responsive';
 import PriceTable from 'components/cards/price-table';
 import SectionHeading from 'components/section-heading';
@@ -9,52 +9,41 @@ import icon1 from 'assets/images/containers/cont-5.svg';
 import icon2 from 'assets/images/containers/cont-7.svg';
 import icon3 from 'assets/images/containers/cont-15.svg';
 import icon4 from 'assets/images/containers/cont-30.svg';
+import iconDiscount from 'assets/images/kontejner-5.webp';
 import SubscriptionForm from "../components/subscription-form";
 
 const data = [
   {
     id: 1,
-    title: 'Бокс 5м²(Грн/месяц)',
+    title: 'Бокс 5м²',
     amount: 5,
     image: icon1,
     is_recommended: false,
-    cost1m: 1550,
-    cost3m: 1472,
-    cost6m: 1395,
-    cost12m: 1317,
+    cost1m: '1150(Грн/месяц)',
   },
   {
     id: 2,
-    title: 'Бокс 7,5м²(Грн/месяц)',
+    title: 'Бокс 7,5м²',
     amount: 15,
     image: icon2,
     is_recommended: true,
-    cost1m: 2100,
-    cost3m: 1995,
-    cost6m: 1890,
-    cost12m: 1785,
+    cost1m: '1550(Грн/месяц)',
   },
   {
     id: 3,
-    title: 'Бокс 15м²(Грн/месяц)',
+    title: 'Бокс 15м²',
     amount: 20,
     image: icon3,
     is_recommended: false,
-    cost1m: 3750,
-    cost3m: 3562,
-    cost6m: 3375,
-    cost12m: 3187,
+    cost1m: '2750(Грн/месяц)',
   },
   {
     id: 4,
-    title: 'Бокс 30м²(Грн/месяц)',
+    title: 'Бокс 30м²',
     amount: 30,
     image: icon4,
     is_recommended: false,
-    cost1m: 5940,
-    cost3m: 5643,
-    cost6m: 5346,
-    cost12m: 5049,
+    cost1m: '5500(Грн/месяц)',
   },
 ];
 
@@ -91,31 +80,35 @@ const settings = {
 };
 
 const Pricing = () => {
-  const isTablet = useMediaQuery({
-    query: '(min-width: 1024px)',
-  });
+  // const isTablet = useMediaQuery({
+  //   query: '(min-width: 1024px)',
+  // });
   return (
     <section id="pricing" sx={styles.section}>
       <Container>
         <SectionHeading
           sx={{ mb: [6, null, null, 14] }}
-          title="Дольше хранишь - больше скидка!"
+          title="Цена за аренду бокса"
         />
         <Box sx={styles.grid}>
-          {isTablet && (
-            <ul as="ul" sx={styles.features}>
-              <li>До 3-х месяцев</li>
-              <li>От 3-х месяцаев - 5% </li>
-              <li>От 6-ти месяцев - 10% </li>
-              <li>От года - 15% </li>
-            </ul>
-          )}
+          {/*{isTablet && (*/}
+            {/*<ul as="ul" sx={styles.features}>*/}
+              {/*<li>До 3-х месяцев</li>*/}
+              {/*<li>От 3-х месяцаев - 5% </li>*/}
+              {/*<li>От 6-ти месяцев - 10% </li>*/}
+              {/*<li>От года - 15% </li>*/}
+            {/*</ul>*/}
+          {/*)}*/}
 
           <Slider sx={styles.priceGroup} {...settings}>
             {data.map((price) => (
               <PriceTable key={price.id} data={price} />
             ))}
           </Slider>
+          <div sx={styles.discount}>
+            <div>2 недели бесплатного хранения - при аренде от 3-х месяцев</div>
+            <Image src={iconDiscount} alt={'Контейнер'} />
+          </div>
         </Box>
         <Box sx={styles.loadMore}>
         <SubscriptionForm buttonLabel="Заказать бокс" sx={styles.subscriptionForm} />
@@ -137,7 +130,7 @@ const styles = {
     display: [null, null, null, null, 'grid'],
     alignItems: [null, null, null, null, 'center'],
     justifyContent: [null, null, null, null, 'center'],
-    gridTemplateColumns: [null, null, null, null, '183px 1fr'],
+    // gridTemplateColumns: [null, null, null, null, '183px 1fr'],
     mx: 'auto',
     '.slick-list': {
       paddingTop: ['31px', null, null, null, 0],
@@ -189,9 +182,18 @@ const styles = {
       },
     },
   },
+  discount: {
+    gap: 2,
+    fontSize: '24px',
+    letterSpacing: '-0.5px',
+    width: "100%",
+    display: [null, null, null, null, 'flex'],
+    alignItems: [null, null, null, null, 'center'],
+    justifyContent: [null, null, null, null, 'center'],
+  },
   priceGroup: {
     gap: 2,
-    alignItems: 'flex-end',
+    width: "100%",
     display: [null, null, null, null, 'grid'],
     gridTemplateColumns: [null, null, null, null, 'repeat(4, 1fr)'],
   },
@@ -200,26 +202,26 @@ const styles = {
     pt: `231px!important`
     }
   },
-  features: {
-    pl: 0,
-    pt: [ null, null, null, null, '203px', '287px'],
-
-    transform: [
-      null,
-      null,
-      null,
-      null,
-      'translateY(-10px)',
-      'translateY(-23px)',
-    ],
-    li: {
-      display: 'flex',
-      alignItems: 'center',
-      fontWeight: 500,
-      minHeight: [null, null, null, null, 50, 59],
-      '+ li': {
-        borderTop: (t) => `1px solid ${t.colors.borderColor}`,
-      },
-    },
-  },
+  // features: {
+  //   pl: 0,
+  //   pt: [ null, null, null, null, '203px', '287px'],
+  //
+  //   transform: [
+  //     null,
+  //     null,
+  //     null,
+  //     null,
+  //     'translateY(-10px)',
+  //     'translateY(-23px)',
+  //   ],
+  //   li: {
+  //     display: 'flex',
+  //     alignItems: 'center',
+  //     fontWeight: 500,
+  //     minHeight: [null, null, null, null, 50, 59],
+  //     '+ li': {
+  //       borderTop: (t) => `1px solid ${t.colors.borderColor}`,
+  //     },
+  //   },
+  // },
 };
