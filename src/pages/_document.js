@@ -14,13 +14,6 @@ class CustomDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=DM+Sans:wght@400;500;700&display=swap"
           />
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-200870019-1"></script>
-            <script>
-                if(window && window.dataLayer){
-                function gtag(){window.dataLayer.push(arguments)}}
-                gtag('js', new Date());
-                gtag('config', 'UA-200870019-1');
-            </script>
         </Head>
         <body>
           <Main />
