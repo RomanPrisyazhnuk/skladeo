@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://startuplanding.io',
+  siteUrl: 'https://skladeo.com',
   generateRobotsTxt: true,
   // optional
   // robotsTxtOptions: {
