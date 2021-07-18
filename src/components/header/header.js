@@ -98,7 +98,8 @@ const styles = {
     iconCall: {
         mr: '10px',
         ml: '10px',
-        height: 'auto',
+        maxWidth: 'unset',
+        height: '36px',
         width: '36px',
     },
     phoneNum:{

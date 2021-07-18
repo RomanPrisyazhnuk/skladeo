@@ -14,13 +14,11 @@ class CustomDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=DM+Sans:wght@400;500;700&display=swap"
           />
-            <!-- Global site tag (gtag.js) - Google Analytics -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=UA-200870019-1"></script>
             <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments)}
+                if(window && window.dataLayer){
+                function gtag(){window.dataLayer.push(arguments)}}
                 gtag('js', new Date());
-
                 gtag('config', 'UA-200870019-1');
             </script>
         </Head>
