@@ -124,13 +124,12 @@ const styles = {
     justifyContent: 'center',
     button: {
       ml: '20px',
-      backgroundColor: '#ECF2F7',
-      color: '#738295',
+      backgroundColor: '#5081f9',
       minHeight: 50,
-      ':hover': {
-        backgroundColor: 'primary',
-        color: 'white',
-      },
+      // ':hover': {
+      //   backgroundColor: 'primary',
+      //   color: 'white',
+      // },
     },
   },
   label: {

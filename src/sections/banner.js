@@ -53,7 +53,7 @@ const styles = {
     m: [null, null, '0 auto', null, 0],
     textAlign: ['center', null, null, null, 'left'],
     h1: {
-      fontFamily: 'headingAlt',
+      // fontFamily: 'headingAlt',
       fontSize: [9, null, null, 10, 12, 45, 16],
       lineHeight: [1.31, null, null, 1.5, null, 1.26],
       letterSpacing: [0, null, null, null, '-1.5px'],

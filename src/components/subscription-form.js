@@ -46,6 +46,7 @@ const styles = {
             height: 'auto',
         },
         button: {
+            backgroundColor: "#5081f9",
             ml: [3],
         },
     },

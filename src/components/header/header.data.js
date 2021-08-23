@@ -15,10 +15,10 @@ export default [
     path: 'contacts',
     label: 'Контакты',
   },
-  {
-    path: 'blog',
-    label: 'Новости',
-  },
+  // {
+  //   path: 'blog',
+  //   label: 'Новости',
+  // },
   {
     path: 'faq',
     label: 'Вопросы',

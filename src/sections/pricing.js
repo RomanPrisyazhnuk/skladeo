@@ -37,14 +37,14 @@ const data = [
     is_recommended: false,
     cost1m: '2750(Грн/месяц)',
   },
-  {
-    id: 4,
-    title: 'Бокс 30м²',
-    amount: 30,
-    image: icon4,
-    is_recommended: false,
-    cost1m: '5500(Грн/месяц)',
-  },
+  // {
+  //   id: 4,
+  //   title: 'Бокс 30м²',
+  //   amount: 30,
+  //   image: icon4,
+  //   is_recommended: false,
+  //   cost1m: '5500(Грн/месяц)',
+  // },
 ];
 
 const settings = {
@@ -173,13 +173,10 @@ const styles = {
     justifyContent: 'center',
     button: {
       ml: '20px',
-      backgroundColor: '#ECF2F7',
-      color: '#738295',
+      backgroundColor: '#5081f9',
       minHeight: 50,
-      ':hover': {
-        backgroundColor: 'primary',
-        color: 'white',
-      },
+      // ':hover': {
+      // },
     },
   },
   discount: {
@@ -195,7 +192,7 @@ const styles = {
     gap: 2,
     width: "100%",
     display: [null, null, null, null, 'grid'],
-    gridTemplateColumns: [null, null, null, null, 'repeat(4, 1fr)'],
+    gridTemplateColumns: [null, null, null, null, 'repeat(3, 1fr)'],
   },
   '@media screen and (min-width:1384px) and (max-width:1503px)': {
     features: {

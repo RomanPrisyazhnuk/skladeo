@@ -26,7 +26,7 @@ export default function IndexPage() {
         <Pricing />
         <Support />
         {/*<Clients />*/}
-        <Blog />
+        {/*<Blog />*/}
         <Faq />
       </Layout>
     </ThemeProvider>
