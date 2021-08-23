@@ -25,6 +25,7 @@ export default function Footer() {
               Copyright by {new Date().getFullYear()} Skladeo - Cклады индивидуального хранения на базе морских контейнеров от 5 до 40 футов, складские боксы под личные вещи
             </Text>
           </Box>
+          <a href={'/agreement.pdf'} target="_blank">Договор</a>
 
           <Box as="ul" sx={styles.footerNav}>
             {footerNav.map(({ path, label }, i) => (

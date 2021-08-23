@@ -10,6 +10,7 @@ import Pricing from 'sections/pricing';
 import Support from 'sections/support';
 // import Clients from 'sections/clients';
 import Blog from 'sections/blog';
+import PhotoGallery from 'sections/photo-gallery';
 import Faq from 'sections/faq';
 
 export default function IndexPage() {
@@ -27,6 +28,7 @@ export default function IndexPage() {
         <Support />
         {/*<Clients />*/}
         {/*<Blog />*/}
+        <PhotoGallery />
         <Faq />
       </Layout>
     </ThemeProvider>
