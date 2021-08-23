@@ -1,7 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Container, Image } from 'theme-ui';
-import SectionHeading from 'components/section-heading';
+import { jsx, Container } from 'theme-ui';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import photo1 from 'assets/images/photos/1.jpg';
