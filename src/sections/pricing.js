@@ -8,7 +8,7 @@ import SectionHeading from 'components/section-heading';
 import icon1 from 'assets/images/containers/cont-5.svg';
 import icon2 from 'assets/images/containers/cont-7.svg';
 import icon3 from 'assets/images/containers/cont-15.svg';
-import icon4 from 'assets/images/containers/cont-30.svg';
+// import icon4 from 'assets/images/containers/cont-30.svg';
 import iconDiscount from 'assets/images/kontejner-5.webp';
 import SubscriptionForm from "../components/subscription-form";
 
