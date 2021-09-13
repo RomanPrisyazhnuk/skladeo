@@ -168,7 +168,7 @@ const styles = {
   },
   loadMore: {
     display: "flex",
-    paddingTop: [3, null, null, 0],
+    paddingTop: [3, null, null, 3],
     alignItems: 'center',
     justifyContent: 'center',
     button: {
