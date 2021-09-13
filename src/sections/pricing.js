@@ -9,7 +9,7 @@ import icon1 from 'assets/images/containers/cont-5.svg';
 import icon2 from 'assets/images/containers/cont-7.svg';
 import icon3 from 'assets/images/containers/cont-15.svg';
 // import icon4 from 'assets/images/containers/cont-30.svg';
-import iconDiscount from 'assets/images/kontejner-5.webp';
+// import iconDiscount from 'assets/images/kontejner-5.webp';
 import SubscriptionForm from "../components/subscription-form";
 
 const data = [
@@ -19,7 +19,7 @@ const data = [
     amount: 5,
     image: icon1,
     is_recommended: false,
-    cost1m: '1150(Грн/месяц)',
+    cost1m: '950(Грн/месяц)',
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const data = [
     amount: 15,
     image: icon2,
     is_recommended: true,
-    cost1m: '1550(Грн/месяц)',
+    cost1m: '1300(Грн/месяц)',
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const data = [
     amount: 20,
     image: icon3,
     is_recommended: false,
-    cost1m: '2750(Грн/месяц)',
+    cost1m: '2300(Грн/месяц)',
   },
   // {
   //   id: 4,
@@ -105,10 +105,10 @@ const Pricing = () => {
               <PriceTable key={price.id} data={price} />
             ))}
           </Slider>
-          <div sx={styles.discount}>
-            <div>2 недели бесплатного хранения - при аренде от 3-х месяцев</div>
-            <Image src={iconDiscount} alt={'Контейнер'} />
-          </div>
+          {/*<div sx={styles.discount}>*/}
+            {/*<div>2 недели бесплатного хранения - при аренде от 3-х месяцев</div>*/}
+            {/*<Image src={iconDiscount} alt={'Контейнер'} />*/}
+          {/*</div>*/}
         </Box>
         <Box sx={styles.loadMore}>
         <SubscriptionForm buttonLabel="Заказать бокс" sx={styles.subscriptionForm} />
